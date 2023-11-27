@@ -4,12 +4,533 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Showcase of HTML elements in a custom framework">
   <link rel="stylesheet" href="styles.css">
-  <title>Custom Framework</title>
+  <title>Custom Framework Showcase</title>
 </head>
 
 <body>
+  <header>
+    <nav>
+      <div class="nav-brand">Custom Framework</div>
+      <ul class="nav-links">
+        <li><a href="#headings">Headings</a></li>
+        <li><a href="#paragraphs">Paragraphs</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#inputs">Inputs</a></li>
+        <li><a href="#selects">Selects</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#media">Media</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+
+    <section id="headings">
+      <h2>Headings</h2>
+      <article>
+        <h1>H1 Heading</h1>
+        <h2>H2 Heading</h2>
+        <h2>h2 Heading</h2>
+        <h3>h3 Heading</h3>
+        <h5>H5 Heading</h5>
+      </article>
+      <aside>
+        <pre>
+          <code data-language="html">
+            &lt;h1&gt;H1 Heading&lt;/h1&gt;
+            &lt;h2&gt;H2 Heading&lt;/h2&gt;
+            &lt;h2&gt;h2 Heading&lt;/h2&gt;
+            &lt;h3&gt;h3 Heading&lt;/h3&gt;
+            &lt;h5&gt;H5 Heading&lt;/h5&gt;
+          </code>
+        </pre>
+      </aside>
+    </section>
+
+    <section id="paragraphs">
+      <h2>Paragraphs</h2>
+      <article>
+        <p>This is a paragraph</p>
+      </article>
+      <aside>
+        <pre>
+          <code data-language="html">
+            &lt;p&gt;This is a paragraph&lt;/p&gt;
+          </code>
+        </pre>
+      </aside>
+    </section>
+
+    <section id="links">
+      <h2>Links</h2>
+
+      <article>
+        <h3>Standard Link</h3>
+        <a href="#">Standard Link</a>
+        <aside>
+          <pre>
+            <code data-language="html">
+              &lt;a href="#"&gt;Standard Link&lt;/a&gt;
+            </code>
+          </pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Styled Link</h3>
+        <a href="#" class="styled-link">Styled Link</a>
+        <aside>
+          <pre>
+            <code data-language="html">
+              &lt;a href="#" class="styled-link"&gt;Styled Link&lt;/a&gt;
+            </code>
+          </pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>External Link</h3>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">External Link</a>
+        <aside>
+          <pre>
+            <code data-language="html">
+              &lt;a href="https://example.com" target="_blank" rel="noopener noreferrer"&gt;External Link&lt;/a&gt;
+            </code>
+          </pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Link with Icon</h3>
+        <a href="#" class="icon-link"><img src="icon.png" alt="Icon"> Link with Icon</a>
+        <aside>
+          <pre>
+            <code data-language="html">
+              &lt;a href="#" class="icon-link"&gt;&lt;img src="icon.png" alt="Icon"&gt; Link with Icon&lt;/a&gt;
+            </code>
+          </pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Disabled Link</h3>
+        <a href="#" class="disabled-link" aria-disabled="true" onclick="return false;">Disabled Link</a>
+        <aside>
+          <pre>
+            <code data-language="html">
+              &lt;a href="#" class="disabled-link" aria-disabled="true" onclick="return false;"&gt;Disabled
+              Link&lt;/a&gt;
+            </code>
+          </pre>
+        </aside>
+      </article>
+
+    </section>
+
+    <section id="buttons">
+      <h2>Buttons</h2>
+
+      <article>
+        <h3>Standard Button</h3>
+        <button type="button">Click Me!</button>
+        <aside>
+          <pre>
+            <code data-language="html">
+              &lt;button type="button"&gt;Click Me!&lt;/button&gt;
+            </code>
+          </pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Disabled Button</h3>
+        <button type="button" disabled>Disabled Button</button>
+        <aside>
+          <pre>
+            <code data-language="html">
+              &lt;button type="button" disabled&gt;Disabled Button&lt;/button&gt;
+            </code>
+          </pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Button with Event</h3>
+        <button type="button" onclick="alert('Button clicked!')">Click for Alert</button>
+        <aside>
+          <pre>
+            <code data-language="html">
+              &lt;button type="button" onclick="alert('Button clicked!')"&gt;Click for Alert&lt;/button&gt;
+            </code>
+          </pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Submit Button</h3>
+        <button type="submit">Submit</button>
+        <aside>
+          <pre>
+            <code data-language="html">
+              &lt;button type="submit"&gt;Submit&lt;/button&gt;
+            </code>
+          </pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Icon Button</h3>
+        <button type="button">
+          <img src="icon.png" alt="Icon"> Icon Button
+        </button>
+        <aside>
+          <pre>
+            <code data-language="html">
+              &lt;button type="button"&gt;
+              &lt;img src="icon.png" alt="Icon"&gt; Icon Button
+              &lt;/button&gt;
+            </code>
+          </pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Toggle Button</h3>
+        <button type="button" aria-pressed="false"
+          onclick="this.setAttribute('aria-pressed', this.getAttribute('aria-pressed') === 'true' ? 'false' : 'true')">Toggle</button>
+        <aside>
+          <pre>
+            <code data-language="html">
+              &lt;button type="button" aria-pressed="false" onclick="this.setAttribute('aria-pressed',
+              this.getAttribute('aria-pressed') === 'true' ? 'false' : 'true')"&gt;Toggle&lt;/button&gt;
+            </code>
+          </pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Large Button</h3>
+        <button type="button" class="large">Large Button</button>
+        <aside>
+          <pre>
+            <code data-language="html">
+              &lt;button type="button" class="large"&gt;Large Button&lt;/button&gt;
+            </code>
+          </pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Small Button</h3>
+        <button type="button" class="small">Small Button</button>
+        <aside>
+          <pre>
+            <code data-language="html">
+              &lt;button type="button" class="small"&gt;Small Button&lt;/button&gt;
+            </code>
+          </pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Colored Buttons</h3>
+        <button type="button" class="red">Red Button</button>
+        <button type="button" class="green">Green Button</button>
+        <button type="button" class="blue">Blue Button</button>
+        <aside>
+          <pre>
+            <code data-language="html">
+              &lt;button type="button" class="red"&gt;Red Button&lt;/button&gt;
+              &lt;button type="button" class="green"&gt;Green Button&lt;/button&gt;
+              &lt;button type="button" class="blue"&gt;Blue Button&lt;/button&gt;
+            </code>
+          </pre>
+        </aside>
+      </article>
+    </section>
+
+    <section id="tables">
+      <h2>Tables</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+          </tr>
+          <tr>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+          </tr>
+          <tr>
+            <td>Data 7</td>
+            <td>Data 8</td>
+            <td>Data 9</td>
+          </tr>
+        </tbody>
+      </table>
+      <aside>
+        <pre>
+          <code data-language="html">
+
+          </code>
+        </pre>
+    </section>
+
+    <section id="inputs">
+      <h2>Input Types</h2>
+      <form action="#">
+        <label for="text-input">Text Input:</label>
+        <input id="text-input" type="text" placeholder="This is a text input">
+
+        <label for="number-input">Number Input:</label>
+        <input id="number-input" type="number" placeholder="This is a number input">
+
+        <label for="email-input">Email Input:</label>
+        <input id="email-input" type="email" placeholder="This is an email input">
+
+        <label for="password-input">Password Input:</label>
+        <input id="password-input" type="password" placeholder="This is a password input">
+
+        <label for="date-input">Date Input:</label>
+        <input id="date-input" type="date">
+
+        <label for="time-input">Time Input:</label>
+        <input id="time-input" type="time">
+
+        <label for="color-input">Color Input:</label>
+        <input id="color-input" type="color">
+
+        <label for="range-input">Range Input:</label>
+        <input id="range-input" type="range">
+
+        <label for="file-input">File Input:</label>
+        <input id="file-input" type="file">
+
+        <label for="checkbox-input">Checkbox Input:</label>
+        <input id="checkbox-input" type="checkbox">
+
+        <fieldset>
+          <legend>Radio Inputs:</legend>
+          <label>
+            <input type="radio" name="radio-input" value="option1"> Option 1
+          </label>
+          <label>
+            <input type="radio" name="radio-input" value="option2"> Option 2
+          </label>
+        </fieldset>
+
+        <label for="search-input">Search Input:</label>
+        <input id="search-input" type="search" placeholder="Search here">
+
+        <input type="reset" value="Reset">
+
+        <input type="submit" value="Submit">
+      </form>
+      <aside>
+        <pre>
+          <code data-language="html">
+            &lt;form action="#"&gt;
+            &lt;label for="text-input"&gt;Text Input:&lt;/label&gt;
+              &lt;input id="text-input" type="text" placeholder="This is a text input"&gt;
+
+              &lt;input type="submit" value="Submit"&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
+      </aside>
+    </section>
+
+    <section id="selects">
+      <h2>Select Dropdowns</h2>
+      <article>
+        <h3>Basic Select</h3>
+        <label for="basic-select">Choose an option:</label>
+        <select id="basic-select">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+        <aside>
+          <pre><code data-language="html">
+              &lt;label for="basic-select"&gt;Choose an option:&lt;/label&gt;
+              &lt;select id="basic-select"&gt;
+                &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+                &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+                &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+              &lt;/select&gt;
+            </code></pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Grouped Select</h3>
+        <label for="grouped-select">Choose a group option:</label>
+        <select id="grouped-select">
+          <optgroup label="Group 1">
+            <option value="g1option1">Group 1 Option 1</option>
+            <option value="g1option2">Group 1 Option 2</option>
+          </optgroup>
+          <optgroup label="Group 2">
+            <option value="g2option1">Group 2 Option 1</option>
+            <option value="g2option2">Group 2 Option 2</option>
+          </optgroup>
+        </select>
+        <aside>
+          <pre><code data-language="html">
+              &lt;label for="grouped-select"&gt;Choose a group option:&lt;/label&gt;
+              &lt;select id="grouped-select"&gt;
+                &lt;optgroup label="Group 1"&gt;
+                  &lt;option value="g1option1"&gt;Group 1 Option 1&lt;/option&gt;
+                  &lt;option value="g1option2"&gt;Group 1 Option 2&lt;/option&gt;
+                &lt;/optgroup&gt;
+                &lt;optgroup label="Group 2"&gt;
+                  &lt;option value="g2option1"&gt;Group 2 Option 1&lt;/option&gt;
+                  &lt;option value="g2option2"&gt;Group 2 Option 2&lt;/option&gt;
+                &lt;/optgroup&gt;
+              &lt;/select&gt;
+            </code></pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Multi-Select Dropdown</h3>
+        <label for="multi-select">Select multiple options:</label>
+        <select id="multi-select" multiple>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+        <aside>
+          <pre><code data-language="html">
+              &lt;label for="multi-select"&gt;Select multiple options:&lt;/label&gt;
+              &lt;select id="multi-select" multiple&gt;
+                &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+                &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+                &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+              &lt;/select&gt;
+            </code></pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Select with Disabled Options</h3>
+        <label for="disabled-select">Select an option (some are disabled):</label>
+        <select id="disabled-select">
+          <option value="option1">Option 1</option>
+          <option value="option2" disabled>Disabled Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+        <aside>
+          <pre><code data-language="html">
+              &lt;label for="disabled-select"&gt;Select an option (some are disabled):&lt;/label&gt;
+              &lt;select id="disabled-select"&gt;
+                &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+                &lt;option value="option2" disabled&gt;Disabled Option 2&lt;/option&gt;
+                &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+              &lt;/select&gt;
+            </code></pre>
+        </aside>
+      </article>
+    </section>
+
+    <section id="lists">
+      <h2>List Types</h2>
+      <article>
+        <h3>Unordered List</h3>
+        <ul>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ul>
+        <aside>
+          <pre><code data-language="html">
+              &lt;ul&gt;
+                &lt;li&gt;List Item 1&lt;/li&gt;
+                &lt;li&gt;List Item 2&lt;/li&gt;
+                &lt;li&gt;List Item 3&lt;/li&gt;
+              &lt;/ul&gt;
+            </code></pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Ordered List</h3>
+        <ol>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ol>
+        <aside>
+          <pre><code data-language="html">
+              &lt;ol&gt;
+                &lt;li&gt;List Item 1&lt;/li&gt;
+                &lt;li&gt;List Item 2&lt;/li&gt;
+                &lt;li&gt;List Item 3&lt;/li&gt;
+              &lt;/ol&gt;
+            </code></pre>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Description List</h3>
+        <dl>
+          <dt>Term 1</dt>
+          <dd>Description 1</dd>
+          <dt>Term 2</dt>
+          <dd>Description 2</dd>
+        </dl>
+        <aside>
+          <pre><code data-language="html">
+              &lt;dl&gt;
+                &lt;dt&gt;Term 1&lt;/dt&gt;
+                &lt;dd&gt;Description 1&lt;/dd&gt;
+                &lt;dt&gt;Term 2&lt;/dt&gt;
+                &lt;dd&gt;Description 2&lt;/dd&gt;
+              &lt;/dl&gt;
+            </code></pre>
+        </aside>
+      </article>
+    </section>
+
+    <section id="media">
+      <h2>Media</h2>
+      <article>
+        <img src="https://picsum.photos/200" alt="This is an image">
+        <video controls>
+          <source src="movie.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </article>
+      <aside>
+        <pre>
+          <code data-language="html">
+            &lt;img src="https://picsum.photos/200" alt="This is an image"&gt;
+          </code>
+        </pre>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 Custom Framework Showcase</p>
+  </footer>
 </body>
 
 </html>

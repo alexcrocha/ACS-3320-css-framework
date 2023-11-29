@@ -49,21 +49,18 @@ header {
     }
 
     & .nav-links {
-      list-style: none;
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-      & li {
-        margin: 0 var(--default-margin);
+    & a {
+      color: var(--background-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
 
-        & a {
-          color: var(--background-color);
-          text-decoration: none;
-          transition: color 0.3s ease;
-
-          &:hover {
-            color: var(--secondary-color);
-          }
-        }
+      &:hover {
+        color: var(--secondary-color);
       }
     }
   }
@@ -205,8 +202,51 @@ footer {
   border-top-style: solid;
   border-image: var(--gradient-color) 1;
 
+  & ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    & li {
+      margin: 0 var(--default-margin);
+    }
+  }
+
+  & h1, h2, h3, h4, h5 {
+    margin: 8px;
+  }
+
+  & a {
+      color: var(--background-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+
   & p {
     margin: 0;
     text-shadow: 0 0 5px var(--secondary-color);
   }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+
+  & li {
+    margin: 0 var(--default-margin);
+  }
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
 }

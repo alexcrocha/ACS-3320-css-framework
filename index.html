@@ -1,545 +1,320 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Showcase of HTML elements in a custom framework">
-  <link rel="stylesheet" href="styles.css">
-  <title>Custom Framework Showcase</title>
+	<title>CSS Framework Starter Sample</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
-
-<body>
-  <header>
-    <nav>
-      <div class="nav-brand">Custom Framework</div>
-      <ul class="nav-links">
-        <li><a href="#headings">Headings</a></li>
-        <li><a href="#paragraphs">Paragraphs</a></li>
-        <li><a href="#links">Links</a></li>
-        <li><a href="#buttons">Buttons</a></li>
-        <li><a href="#tables">Tables</a></li>
-        <li><a href="#inputs">Inputs</a></li>
-        <li><a href="#selects">Selects</a></li>
-        <li><a href="#lists">Lists</a></li>
-        <li><a href="#media">Media</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <section id="headings">
-      <h2>Headings</h2>
-      <article>
-        <div>
-          <h1>H1 Heading</h1>
-          <h2>H2 Heading</h2>
-          <h3>H3 Heading</h3>
-          <h4>H4 Heading</h4>
-          <h5>H5 Heading</h5>
-        </div>
-      </article>
-      <aside>
-        <pre>
-
-          &lt;h1&gt;H1 Heading&lt;/h1&gt;
-          &lt;h2&gt;H2 Heading&lt;/h2&gt;
-          &lt;h3&gt;H3 Heading&lt;/h3&gt;
-          &lt;h4&gt;H4 Heading&lt;/h4&gt;
-          &lt;h5&gt;H5 Heading&lt;/h5&gt;
-        </pre>
-      </aside>
-    </section>
-
-    <section id="paragraphs">
-      <h2>Paragraphs</h2>
-      <article>
-        <p>This is a paragraph</p>
-      </article>
-      <aside>
-        <pre>
-
-          &lt;p&gt;This is a paragraph&lt;/p&gt;
-        </pre>
-      </aside>
-    </section>
-
-    <section id="links">
-      <h2>Links</h2>
-
-      <article>
-        <h3>Standard Link</h3>
-        <a href="#">Standard Link</a>
-        <aside>
-          <pre>
-
-              &lt;a href="#"&gt;Standard Link&lt;/a&gt;
-            </pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>Styled Link</h3>
-        <a href="#" class="styled-link">Styled Link</a>
-        <aside>
-          <pre>
-
-              &lt;a href="#" class="styled-link"&gt;Styled Link&lt;/a&gt;
-            </pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>External Link</h3>
-        <a href="https://example.com" target="_blank" rel="noopener noreferrer">External Link</a>
-        <aside>
-          <pre>
-            
-              &lt;a href="https://example.com" target="_blank" rel="noopener noreferrer"&gt;External
-              Link&lt;/a&gt;
-            </pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>Link with Icon</h3>
-        <a href="#" class="icon-link"><img src="icon.png" alt="Icon"> Link with Icon</a>
-        <aside>
-          <pre>
-              &lt;a href="#" class="icon-link"&gt;&lt;img src="icon.png" alt="Icon"&gt; Link with Icon&lt;/a&gt;
-            </pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>Disabled Link</h3>
-        <a href="#" class="disabled-link" aria-disabled="true" onclick="return false;">Disabled Link</a>
-        <aside>
-          <pre>
-
-              &lt;a href="#" class="disabled-link" aria-disabled="true" onclick="return false;"&gt;Disabled
-              Link&lt;/a&gt;
-          </pre>
-        </aside>
-      </article>
-
-    </section>
-
-    <section id="buttons">
-      <h2>Buttons</h2>
-
-      <article>
-        <h3>Standard Button</h3>
-        <button type="button">Click Me!</button>
-        <aside>
-          <pre>
-
-              &lt;button type="button"&gt;
-              Click Me!
-              &lt;/button&gt;
-          </pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>Disabled Button</h3>
-        <button type="button" disabled>Disabled Button</button>
-        <aside>
-          <pre>
-
-              &lt;button type="button" disabled&gt;
-              Disabled Button
-              &lt;/button&gt;
-          </pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>Button with Event</h3>
-        <button type="button" onclick="alert('Button clicked!')">Click for Alert</button>
-        <aside>
-          <pre>
-
-              &lt;button type="button" onclick="alert('Button clicked!')"&gt;
-              Click for Alert
-              &lt;/button&gt;
-          </pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>Submit Button</h3>
-        <button type="submit">Submit</button>
-        <aside>
-          <pre>
-
-              &lt;button type="submit"&gt;
-              Submit
-              &lt;/button&gt;
-          </pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>Icon Button</h3>
-        <button type="button">
-          <img src="icon.png" alt="Icon"> Icon Button
-        </button>
-        <aside>
-          <pre>
-
-              &lt;button type="button"&gt;
-              &lt;img src="icon.png" alt="Icon"&gt; Icon Button
-              &lt;/button&gt;
-          </pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>Toggle Button</h3>
-        <button type="button" aria-pressed="false"
-          onclick="this.setAttribute('aria-pressed', this.getAttribute('aria-pressed') === 'true' ? 'false' : 'true')">Toggle</button>
-        <aside>
-          <pre>
-
-              &lt;button type="button" aria-pressed="false" onclick="this.setAttribute('aria-pressed',
-              this.getAttribute('aria-pressed') === 'true' ? 'false' : 'true')"&gt;
-              Toggle
-              &lt;/button&gt;
-          </pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>Large Button</h3>
-        <button type="button" class="large">Large Button</button>
-        <aside>
-          <pre>
-
-              &lt;button type="button" class="large"&gt;
-              Large Button
-              &lt;/button&gt;
-          </pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>Small Button</h3>
-        <button type="button" class="small">Small Button</button>
-        <aside>
-          <pre>
-
-              &lt;button type="button" class="small"&gt;
-              Small Button
-              &lt;/button&gt;
-          </pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>Colored Buttons</h3>
-        <button type="button" class="red">Red Button</button>
-        <button type="button" class="green">Green Button</button>
-        <button type="button" class="blue">Blue Button</button>
-        <aside>
-          <pre>
-
-              &lt;button type="button" class="red"&gt;
-              Red Button
-              &lt;/button&gt;
-
-              &lt;button type="button" class="green"&gt;
-              Green Button
-              &lt;/button&gt;
-
-              &lt;button type="button" class="blue"&gt;
-              Blue Button
-              &lt;/button&gt;
-          </pre>
-        </aside>
-      </article>
-    </section>
-
-    <section id="tables">
-      <h2>Tables</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-            <th>Header 3</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
-            <td>Data 3</td>
-          </tr>
-          <tr>
-            <td>Data 4</td>
-            <td>Data 5</td>
-            <td>Data 6</td>
-          </tr>
-          <tr>
-            <td>Data 7</td>
-            <td>Data 8</td>
-            <td>Data 9</td>
-          </tr>
-        </tbody>
-      </table>
-      <aside>
-        <pre>
-
-
-
-        </pre>
-    </section>
-
-    <section id="inputs">
-      <h2>Input Types</h2>
-      <form action="#">
-        <label for="text-input">Text Input:</label>
-        <input id="text-input" type="text" placeholder="This is a text input">
-
-        <label for="number-input">Number Input:</label>
-        <input id="number-input" type="number" placeholder="This is a number input">
-
-        <label for="email-input">Email Input:</label>
-        <input id="email-input" type="email" placeholder="This is an email input">
-
-        <label for="password-input">Password Input:</label>
-        <input id="password-input" type="password" placeholder="This is a password input">
-
-        <label for="date-input">Date Input:</label>
-        <input id="date-input" type="date">
-
-        <label for="time-input">Time Input:</label>
-        <input id="time-input" type="time">
-
-        <label for="color-input">Color Input:</label>
-        <input id="color-input" type="color">
-
-        <label for="range-input">Range Input:</label>
-        <input id="range-input" type="range">
-
-        <label for="file-input">File Input:</label>
-        <input id="file-input" type="file">
-
-        <label for="checkbox-input">Checkbox Input:</label>
-        <input id="checkbox-input" type="checkbox">
-
-        <fieldset>
-          <legend>Radio Inputs:</legend>
-          <label>
-            <input type="radio" name="radio-input" value="option1"> Option 1
-          </label>
-          <label>
-            <input type="radio" name="radio-input" value="option2"> Option 2
-          </label>
-        </fieldset>
-
-        <label for="search-input">Search Input:</label>
-        <input id="search-input" type="search" placeholder="Search here">
-
-        <input type="reset" value="Reset">
-
-        <input type="submit" value="Submit">
-      </form>
-      <aside>
-        <pre>
-
-            &lt;form action="#"&gt;
-            &lt;label for="text-input"&gt;Text Input:&lt;/label&gt;
-            &lt;input id="text-input" type="text" placeholder="This is a text input"&gt;
-
-            &lt;input type="submit" value="Submit"&gt;
-            &lt;/form&gt;
-        </pre>
-      </aside>
-    </section>
-
-    <section id="selects">
-      <h2>Select Dropdowns</h2>
-      <article>
-        <h3>Basic Select</h3>
-        <label for="basic-select">Choose an option:</label>
-        <select id="basic-select">
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
-        </select>
-        <aside>
-          <pre>
-              &lt;label for="basic-select"&gt;
-              Choose an option:
-              &lt;/label&gt;
-              &lt;select id="basic-select"&gt;
-              &lt;option value="option1"&gt;
-              Option 1
-              &lt;/option&gt;
-              &lt;option value="option2"&gt;
-              Option 2
-              &lt;/option&gt;
-              &lt;option value="option3"&gt;
-              Option 3
-              &lt;/option&gt;
-              &lt;/select&gt;</pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>Grouped Select</h3>
-        <label for="grouped-select">Choose a group option:</label>
-        <select id="grouped-select">
-          <optgroup label="Group 1">
-            <option value="g1option1">Group 1 Option 1</option>
-            <option value="g1option2">Group 1 Option 2</option>
-          </optgroup>
-          <optgroup label="Group 2">
-            <option value="g2option1">Group 2 Option 1</option>
-            <option value="g2option2">Group 2 Option 2</option>
-          </optgroup>
-        </select>
-        <aside>
-          <pre>
-              &lt;label for="grouped-select"&gt;Choose a group option:&lt;/label&gt;
-              &lt;select id="grouped-select"&gt;
-              &lt;optgroup label="Group 1"&gt;
-              &lt;option value="g1option1"&gt;Group 1 Option 1&lt;/option&gt;
-              &lt;option value="g1option2"&gt;Group 1 Option 2&lt;/option&gt;
-              &lt;/optgroup&gt;
-              &lt;optgroup label="Group 2"&gt;
-              &lt;option value="g2option1"&gt;Group 2 Option 1&lt;/option&gt;
-              &lt;option value="g2option2"&gt;Group 2 Option 2&lt;/option&gt;
-              &lt;/optgroup&gt;
-              &lt;/select&gt;</pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>Multi-Select Dropdown</h3>
-        <label for="multi-select">Select multiple options:</label>
-        <select id="multi-select" multiple>
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
-        </select>
-        <aside>
-          <pre>
-              &lt;label for="multi-select"&gt;Select multiple options:&lt;/label&gt;
-              &lt;select id="multi-select" multiple&gt;
-              &lt;option value="option1"&gt;Option 1&lt;/option&gt;
-              &lt;option value="option2"&gt;Option 2&lt;/option&gt;
-              &lt;option value="option3"&gt;Option 3&lt;/option&gt;
-              &lt;/select&gt;</pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>Select with Disabled Options</h3>
-        <label for="disabled-select">Select an option (some are disabled):</label>
-        <select id="disabled-select">
-          <option value="option1">Option 1</option>
-          <option value="option2" disabled>Disabled Option 2</option>
-          <option value="option3">Option 3</option>
-        </select>
-        <aside>
-          <pre>
-              &lt;label for="disabled-select"&gt;Select an option (some are disabled):&lt;/label&gt;
-              &lt;select id="disabled-select"&gt;
-              &lt;option value="option1"&gt;Option 1&lt;/option&gt;
-              &lt;option value="option2" disabled&gt;Disabled Option 2&lt;/option&gt;
-              &lt;option value="option3"&gt;Option 3&lt;/option&gt;
-              &lt;/select&gt;</pre>
-        </aside>
-      </article>
-    </section>
-
-    <section id="lists">
-      <h2>List Types</h2>
-      <article>
-        <h3>Unordered List</h3>
-        <ul>
-          <li>List Item 1</li>
-          <li>List Item 2</li>
-          <li>List Item 3</li>
-        </ul>
-        <aside>
-          <pre>
-              &lt;ul&gt;
-              &lt;li&gt;List Item 1&lt;/li&gt;
-              &lt;li&gt;List Item 2&lt;/li&gt;
-              &lt;li&gt;List Item 3&lt;/li&gt;
-              &lt;/ul&gt;</pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>Ordered List</h3>
-        <ol>
-          <li>List Item 1</li>
-          <li>List Item 2</li>
-          <li>List Item 3</li>
-        </ol>
-        <aside>
-          <pre>
-              &lt;ol&gt;
-              &lt;li&gt;List Item 1&lt;/li&gt;
-              &lt;li&gt;List Item 2&lt;/li&gt;
-              &lt;li&gt;List Item 3&lt;/li&gt;
-              &lt;/ol&gt;</pre>
-        </aside>
-      </article>
-
-      <article>
-        <h3>Description List</h3>
-        <dl>
-          <dt>Term 1</dt>
-          <dd>Description 1</dd>
-          <dt>Term 2</dt>
-          <dd>Description 2</dd>
-        </dl>
-        <aside>
-          <pre>
-              &lt;dl&gt;
-              &lt;dt&gt;Term 1&lt;/dt&gt;
-              &lt;dd&gt;Description 1&lt;/dd&gt;
-              &lt;dt&gt;Term 2&lt;/dt&gt;
-              &lt;dd&gt;Description 2&lt;/dd&gt;
-              &lt;/dl&gt;
-            </pre>
-        </aside>
-      </article>
-    </section>
-
-    <section id="media">
-      <h2>Media</h2>
-      <article>
-        <img src="https://picsum.photos/200" alt="This is an image">
-        <video controls>
-          <source src="movie.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <audio controls>
-          <source src="audio.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </article>
-      <aside>
-        <pre>
-
-            &lt;img src="https://picsum.photos/200" alt="This is an image"&gt;
-
-        </pre>
-      </aside>
-    </section>
+<!-- Page Wraper -->
+<body class="dark">
+	<!-- Page Navigation -->
+	<header class="navbar">
+		<nav>
+
+
+			<div class="nav-brand">Framework Name</div>
+			<ul class="nav-links">
+				<!-- <li><a href="#colors">Colors</a></li> -->
+				<li><a href="#navbar">Navbar</a></li>
+				<li><a href="#headings">Headings</a></li>
+				<li><a href="#type">Type</a></li>
+				<li><a href="#links">Links</a></li>
+				<li><a href="#colors">Links</a></li>
+				<li><a href="#forms">Forms</a></li>
+				<li><a href="#buttons">Buttons</a></li>
+				<!-- <li><a href="#footer">Footer</a></li> -->
+			</ul>
+
+		<ul class="nav-links">
+			<li><a href="link/to/your/framework/repo">GitHub</a></li>
+		</ul>
+		</nav>
+	</header>
+
+	<!-- main content -->
+  <main class="container main">
+
+		<!-- --------------------------- -->
+		<!-- Headings -->
+		<section id="headings">
+			<h1>Headings</h1>
+			<h1>H1 Heading</h1>
+			<h2>H2 Heading</h2>
+			<h3>H3 Heading</h3>
+			<h4>H4 Heading</h4>
+			<h5>H5 Heading</h5>
+			<h6>H6 Heading</h6>
+
+			<pre>
+				<code>
+&lt;h1&gt;Headings&lt;/h1&gt;
+&lt;h1&gt;H1 Heading&lt;/h1&gt;
+&lt;h2&gt;H2 Heading&lt;/h2&gt;
+&lt;h3&gt;H3 Heading&lt;/h3&gt;
+&lt;h4&gt;H4 Heading&lt;/h4&gt;
+&lt;h5&gt;H5 Heading&lt;/h5&gt;
+&lt;h6&gt;H6 Heading&lt;/h6&gt;
+				</code>
+			</pre>
+		</section>
+		<!-- --------------------------- -->
+
+		<!-- --------------------------- -->
+		<!-- Paragraph Style -->
+		<section id="type">
+			<h1>Paragraph styles</h1>
+			<p>This is the <strong>strong tag</strong> in a paragraph.
+				This is the <em>em tag in a paragraph</em>, elements such
+				as &lt;strong&gt; and &lt;em&gt; are inline. Here is an
+				example of the <abbr>abbreviation tag.</abbr> You'd use
+				abbr for things like <abbr title="Hyper Text Markup Language">HTML</abbr>
+				and <abbr title="Cascading Stylesheets">CSS</abbr>.</p>
+
+			<pre>
+				<code>
+&lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; paragraph. It includes some &lt;em&gt;inline&lt;/em&gt; elements such as &lt;strong&gt; and &lt;em&gt;.&lt;/p&gt;
+				</code>
+			</pre>
+		</section>
+		<!-- ----------------------------- -->
+
+		<!-- --------------------------- -->
+		<!-- Button Styles -->
+		<section id="buttons">
+			<h2>Buttons</h2>
+
+			<p>This is your average button. You might want to click it.</p>
+
+			<p><button>Submit</button></p>
+
+			<pre>
+				<code>
+&lt;button&gt;Submit&lt;/button&gt;
+				</code>
+			</pre>
+
+			<p>This button has consequences. You might want to think twice before clicking.</p>
+			<p>Custimize buttons by adding CSS variables inline or with a class.</p>
+			<p>
+<button
+	style="--weight: bold; --background-color: #f85353;"
+>Delete</button>
+	<button
+	style="--background-color: #6bc253;"
+>Go!</button>
+			</p>
+
+			<pre>
+				<code>
+&lt;button
+	style=&quot;--weight: bold;
+	--background-color: #f85353;&quot;
+&gt;Delete&lt;/button&gt;
+
+&lt;button
+	style=&quot;--background-color: #6bc253;&quot;
+&gt;Go!&lt;/button&gt;
+				</code>
+			</pre>
+		</section>
+		<!-- --------------------------- -->
+
+		<!-- --------------------------- -->
+		<!-- Link styles -->
+		<section>
+			<h2>Links</h2>
+			<p>This <a href="#">paragraph</a> contains a couple <a href="#">links</a> to show off their styles in context.</p>
+
+			<pre>
+				<code>
+&lt;p&gt;This &lt;a href=&quot;#&quot;&gt;paragraph&lt;/a&gt; contains a couple &lt;a
+href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p&gt;
+				</code>
+			</pre>
+
+		</section>
+		<!-- --------------------------- -->
+
+		<!-- --------------------------- -->
+		<!-- Form Styles -->
+		<section>
+			<h2>Forms and controls</h2>
+			<form>
+				<label>
+					<span>Text:</span>
+					<input type="text" placeholder="What is your name?">
+				</label>
+
+				<label>
+					<span>Email:</span>
+					<input type="email" placeholder="What is your name?">
+				</label>
+
+				<label>
+					<span>Password:</span>
+					<input type="password" placeholder="What is your name?">
+				</label>
+
+				<label>
+					<span>Your comments</span>
+					<textarea placeholder="Your comment"></textarea>
+				</label>
+
+				<!-- Switch with Click -->
+				<div>
+					<label id="switch-2" class="switch-2">
+						<input type="checkbox">
+						<div>
+							<div></div>
+						</div>
+					</label>
+					<span>Click Switch no JS</span>
+				</div>
+
+				<label class="control-checkbox">One
+					<input type="checkbox" checked="checked">
+					<span></span>
+				</label>
+			</form>
+
+			<h3>Input and label</h3>
+			<pre>
+				<code>
+&lt;label&gt;
+&#x9;&lt;span&gt;Text:&lt;/span&gt;
+&#x9;&lt;input type=&quot;text&quot; placeholder=&quot;What is your name?&quot;&gt;
+&lt;/label&gt;
+				</code>
+			</pre>
+
+			<h3>Checkbox and label</h3>
+			<pre>
+				<code>
+&lt;label class=&quot;control-checkbox&quot;&gt;One
+&#x9;&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot;&gt;
+&#x9;&lt;span&gt;&lt;/span&gt;
+&lt;/label&gt;
+				</code>
+						</pre>
+
+		</section>
+
+		<!-- --------------------------- -->
+		<!-- Colors -->
+		<section id="colors">
+			<h1>Colors</h1>
+			<div class="color-grid">
+
+				<div style="background-color: var(--color-background)">--color-background</div>
+				<div style="background-color: var(--color-foreground); color: var(--color-background)">--color-foreground</div>
+				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-dark</div>
+
+				<div style="background-color: var(--color-light)">--color-light</div>
+
+				<div style="background-color: var(--color-md-light)">--color-md-light</div>
+
+				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-md-dark</div>
+
+				<div style="background-color: var(--color-primary); color: var(--color-background)">--color-primary</div>
+
+				<div style="background-color: var(--color-info); color: var(--color-background)">--color-info</div>
+
+				<div style="background-color: var(--color-success); color: var(--color-background)">--color-success</div>
+
+				<div style="background-color: var(--color-danger); color: var(--color-background)">--color-danger</div>
+
+				<div style="background-color: var(--color-callout)">--color-callout</div>
+				<div style="background-color: var(--color-lightest)">--color-lightest</div>
+			</div>
+		</section>
+		<!-- --------------------------- -->
+
+
+		<!-- --------------------------- -->
+		<!-- Nav Bar styles -->
+		<section id="navbar">
+			<h1>Navbar</h1>
+
+			<h2>Navbar 1</h2>
+			<p>A navbar with all elements on the left.</p>
+			<p>Use a single child under <code>div.navbar</code>.</p>
+
+			<div class="navbar">
+				<ul>
+					<li><h1 class="title">TITLE</h1></li>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<pre class="code-block">
+					<code>
+&lt;div class=&quot;navbar&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+			</div>
+
+		</section>
+
+
+
+		<!-- --------------------------- -->
+		<!-- Footer Styles -->
+		<section id="footers">
+			<h2>Page Footer</h2>
+			<footer class="page-footer">
+				<ul>
+					<li><h4>Column 1</h4></li>
+					<li><a>Item 1</a></li>
+					<li><a>Item 2</a></li>
+					<li><a>Item 3</a></li>
+				</ul>
+
+				<ul>
+					<li><h4>Column 2</h4></li>
+					<li><a>Item 1</a></li>
+					<li><a>Item 2</a></li>
+					<li><a>Item 3</a></li>
+				</ul>
+
+				<ul>
+					<li><h4>Column 3</h4></li>
+					<li><a>Item 1</a></li>
+					<li><a>Item 2</a></li>
+					<li><a>Item 3</a></li>
+				</ul>
+			</footer>
+		</section>
   </main>
+	<footer class="page-footer">
+		<ul>
+			<li><h4>Content</h4></li>
+			<li><a href="#colors">Colors</a></li>
+			<li><a href="#navbar">Navbar</a></li>
+			<li><a href="#headings">Headings</a></li>
+			<li><a href="#type">Type</a></li>
+			<li><a href="#forms">Forms</a></li>
+		</ul>
 
-  <footer>
-    <p>© 2023 Custom Framework Showcase</p>
-  </footer>
+		<ul>
+			<li><h4>Resources</h4></li>
+			<li><a href="">CSS Tricks</a></li>
+			<li><a href="">CSS Tricks</a></li>
+		</ul>
+
+		<ul>
+			<li><h4>Contact</h4></li>
+			<li><a href="https://github.com/soggybag/frmwrk-css">GitHub</a></li>
+		</ul>
+	</footer>
 </body>
-
 </html>

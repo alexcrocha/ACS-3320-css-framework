@@ -1,33 +1,29 @@
 <html>
 <head>
-	<title>CSS Framework Starter Sample</title>
-	<link rel="stylesheet" href="styles.css">
+	<title>NeonGlow Framework</title>
+	<link rel="stylesheet" href="neonglow.css">
 </head>
 <!-- Page Wraper -->
-<body class="dark">
+<body class="neonglow">
 	<!-- Page Navigation -->
-	<header class="navbar">
-		<nav>
+<header class="navbar">
+	<div class="nav-brand">NeonGlow Framework</div>
+	<ul class="nav-links">
+		<!-- <li><a href="#colors">Colors</a></li> -->
+		<li><a href="#navbar">Navbar</a></li>
+		<li><a href="#headings">Headings</a></li>
+		<li><a href="#type">Type</a></li>
+		<li><a href="#links">Links</a></li>
+		<li><a href="#colors">Links</a></li>
+		<li><a href="#forms">Forms</a></li>
+		<li><a href="#buttons">Buttons</a></li>
+		<!-- <li><a href="#footer">Footer</a></li> -->
+	</ul>
 
-
-			<div class="nav-brand">Framework Name</div>
-			<ul class="nav-links">
-				<!-- <li><a href="#colors">Colors</a></li> -->
-				<li><a href="#navbar">Navbar</a></li>
-				<li><a href="#headings">Headings</a></li>
-				<li><a href="#type">Type</a></li>
-				<li><a href="#links">Links</a></li>
-				<li><a href="#colors">Links</a></li>
-				<li><a href="#forms">Forms</a></li>
-				<li><a href="#buttons">Buttons</a></li>
-				<!-- <li><a href="#footer">Footer</a></li> -->
-			</ul>
-
-		<ul class="nav-links">
-			<li><a href="link/to/your/framework/repo">GitHub</a></li>
-		</ul>
-		</nav>
-	</header>
+	<ul class="nav-links">
+		<li><a href="link/to/your/framework/repo">GitHub</a></li>
+	</ul>
+</header>
 
 	<!-- main content -->
   <main class="container main">
@@ -83,11 +79,11 @@
 
 			<p>This is your average button. You might want to click it.</p>
 
-			<p><button>Submit</button></p>
+			<button id="toggle-btn">Click Me!</button>
 
 			<pre>
 				<code>
-&lt;button&gt;Submit&lt;/button&gt;
+&lt;button id="toggle-btn"&gt;Click Me!&lt;/button&gt;
 				</code>
 			</pre>
 
@@ -95,10 +91,10 @@
 			<p>Custimize buttons by adding CSS variables inline or with a class.</p>
 			<p>
 <button
-	style="--weight: bold; --background-color: #f85353;"
+	style="--weight: bold; background-color: #fff718;"
 >Delete</button>
 	<button
-	style="--background-color: #6bc253;"
+	style="background-color: #33ff41;"
 >Go!</button>
 			</p>
 
@@ -106,11 +102,11 @@
 				<code>
 &lt;button
 	style=&quot;--weight: bold;
-	--background-color: #f85353;&quot;
+	background-color: #fff718;&quot;
 &gt;Delete&lt;/button&gt;
 
 &lt;button
-	style=&quot;--background-color: #6bc253;&quot;
+	style=&quot;background-color: #33ff41;&quot;
 &gt;Go!&lt;/button&gt;
 				</code>
 			</pre>
@@ -158,21 +154,26 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 					<textarea placeholder="Your comment"></textarea>
 				</label>
 
-				<!-- Switch with Click -->
-				<div>
-					<label id="switch-2" class="switch-2">
-						<input type="checkbox">
-						<div>
-							<div></div>
-						</div>
-					</label>
-					<span>Click Switch no JS</span>
-				</div>
+				<div class="newsletter">
+					<div class="checkbox-group">
+						<input type="checkbox" id="newsletter-signup">
+						<label for="newsletter-signup">Sign up for the newsletter</label>
+					</div>
+<div class="radio-group">
+	<input type="radio" id="artist" name="user">
+	<label for="artist">Artist</label>
+</div>
 
-				<label class="control-checkbox">One
-					<input type="checkbox" checked="checked">
-					<span></span>
-				</label>
+					<div class="radio-group">
+						<input type="radio" id="designer" name="user">
+						<label for="designer">Designer</label>
+					</div>
+
+					<div class="radio-group">
+						<input type="radio" id="enthusiast" name="user">
+						<label for="enthusiast">Enthusiast</label>
+					</div>
+					</div>
 			</form>
 
 			<h3>Input and label</h3>
@@ -188,10 +189,17 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 			<h3>Checkbox and label</h3>
 			<pre>
 				<code>
-&lt;label class=&quot;control-checkbox&quot;&gt;One
-&#x9;&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot;&gt;
-&#x9;&lt;span&gt;&lt;/span&gt;
-&lt;/label&gt;
+&lt;div class=&quot;newsletter&quot;&gt;
+&#x9;&lt;div class=&quot;checkbox-group&quot;&gt;
+&#x9;&#x9;&lt;input type=&quot;checkbox&quot; id=&quot;newsletter-signup&quot;&gt;
+&#x9;&#x9;&lt;label for=&quot;newsletter-signup&quot;&gt;Sign up for the newsletter&lt;/label&gt;
+&#x9;&lt;/div&gt;
+
+&#x9;&lt;div class=&quot;radio-group&quot;&gt;
+&#x9;&#x9;&lt;input type=&quot;radio&quot; id=&quot;artist&quot; name=&quot;user&quot;&gt;
+&#x9;&#x9;&lt;label for=&quot;artist&quot;&gt;Artist&lt;/label&gt;
+&#x9;&lt;/div&gt;
+&lt;/div&gt;
 				</code>
 						</pre>
 
@@ -203,26 +211,20 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 			<h1>Colors</h1>
 			<div class="color-grid">
 
-				<div style="background-color: var(--color-background)">--color-background</div>
-				<div style="background-color: var(--color-foreground); color: var(--color-background)">--color-foreground</div>
-				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-dark</div>
+				<div style="background-color: var(--primary-color); color: var(--text-color-dark)">--primary-color</div>
+				<div style="background-color: var(--secondary-color); color: var(--color-background)">--secondary-color</div>
+				<div style="background-image: var(--gradient-color); color: var(--color-background)">--gradient-color</div>
 
-				<div style="background-color: var(--color-light)">--color-light</div>
+				<div style="background-color: var(--background-color); color: var(--text-color)">--background-color</div>
 
-				<div style="background-color: var(--color-md-light)">--color-md-light</div>
+				<div style="background-color: var(--text-color); color: var(--text-color-dark)">--text-color</div>
 
-				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-md-dark</div>
+				<div style="background-color: var(--text-color-dark); color: var(--text-color)">--text-color-dark</div>
 
-				<div style="background-color: var(--color-primary); color: var(--color-background)">--color-primary</div>
+				<div style="background-color: var(--success-color); color: var(--text-color-dark)">--success-color</div>
 
-				<div style="background-color: var(--color-info); color: var(--color-background)">--color-info</div>
+				<div style="background-color: var(--danger-color); color: var(--text-color-dark)">--danger-color</div>
 
-				<div style="background-color: var(--color-success); color: var(--color-background)">--color-success</div>
-
-				<div style="background-color: var(--color-danger); color: var(--color-background)">--color-danger</div>
-
-				<div style="background-color: var(--color-callout)">--color-callout</div>
-				<div style="background-color: var(--color-lightest)">--color-lightest</div>
 			</div>
 		</section>
 		<!-- --------------------------- -->
@@ -238,8 +240,8 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 			<p>Use a single child under <code>div.navbar</code>.</p>
 
 			<div class="navbar">
-				<ul>
-					<li><h1 class="title">TITLE</h1></li>
+				<h1 class="nav-brand">TITLE</h1>
+				<ul class="nav-links">
 					<li><a href="#">Link 1</a></li>
 					<li><a href="#">Link 2</a></li>
 					<li><a href="#">Link 3</a></li>
@@ -251,8 +253,8 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 				<pre class="code-block">
 					<code>
 &lt;div class=&quot;navbar&quot;&gt;
-	&lt;ul&gt;
-		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+	&lt;h1 class=&quot;nav-brand&quot;&gt;TITLE&lt;/h1&gt;
+	&lt;ul class=&quot;nav-links&quot;&gt;
 		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
@@ -316,5 +318,6 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 			<li><a href="https://github.com/soggybag/frmwrk-css">GitHub</a></li>
 		</ul>
 	</footer>
+	<script src="scripts.js"></script>
 </body>
 </html>
